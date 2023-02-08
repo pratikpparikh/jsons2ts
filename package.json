@@ -1,0 +1,33 @@
+{
+  "name": "jsons2ts",
+  "version": "1.0.0",
+  "description": "Generate typescript code from json schema",
+  "main": "src/index.js",
+  "scripts": {
+    "prejsons2ts": "npx tsc",
+    "predev": "npx tsc",
+    "jsons2ts": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratikpparikh/jsons2ts.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "typescript",
+    "package.json"
+  ],
+  "author": "Pratik Parikh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pratikpparikh/jsons2ts/issues"
+  },
+  "homepage": "https://github.com/pratikpparikh/jsons2ts#readme",
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.0",
+    "json-schema-to-typescript": "^11.0.3"
+  }
+}

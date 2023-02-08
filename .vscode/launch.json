@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Run Script: jsons2ts",
+            "request": "launch",
+            "command": "npm run jsons2ts",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
