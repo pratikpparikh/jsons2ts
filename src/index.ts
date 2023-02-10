@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { jsons2ts } from "./jsons2ts";
 
 const jsonSchemaFiles = process.argv.slice(2) || undefined;

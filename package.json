@@ -1,13 +1,17 @@
 {
   "name": "jsons2ts",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Generate typescript code from json schema",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "jsons2ts": "dist/index.js"
+  },
   "scripts": {
     "prejsons2ts": "npx tsc",
     "predev": "npx tsc",
     "jsons2ts": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
